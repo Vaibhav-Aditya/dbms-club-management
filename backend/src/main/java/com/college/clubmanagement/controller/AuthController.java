@@ -65,4 +65,9 @@ public class AuthController {
             return "redirect:/profile?success=Left+Club";
         }
     }
+
+    @HeadMapping("/health")
+    public ResponseEntity<Void> health() {
+        return ResponseEntity.ok().build();
+    }
 }
